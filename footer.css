@@ -1,0 +1,41 @@
+.footer {
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(39, 37, 37);
+    position: fixed;
+    min-height: 200px;
+}
+
+.footer_row {
+    display: -ms-flexbox;
+    /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap;
+    /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+.footer_column {
+    -ms-flex: 33%;
+    /* IE10 */
+    flex: 33%;
+    max-width: 33%;
+    padding: 0 4px;
+}
+
+@media screen and (max-width: 800px) {
+    .footer_column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .footer_column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+}
